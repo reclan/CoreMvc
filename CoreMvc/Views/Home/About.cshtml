@@ -1,6 +1,14 @@
 ﻿@{
     ViewData["Title"] = "About";
+}                
+@section Styles{   
+    <style>
+        a.linked{
+            color: red;
+        }
+    </style>
 }
 <h1>@ViewData["Title"]</h1>
 
 <p>This is the super-puper web application</p>
+<p><a asp-action="Privacy" class="linked">Privacy</a></p>
